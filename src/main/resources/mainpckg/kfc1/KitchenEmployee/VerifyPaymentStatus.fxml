@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpckg.kfc1.KitchenEmployee.VerifyPaymentStatusController">
+   <children>
+      <Label layoutX="310.0" layoutY="44.0" prefHeight="27.0" prefWidth="182.0" text="Payment Verification">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="paymentVerificationTableView" layoutX="184.0" layoutY="108.0" prefHeight="200.0" prefWidth="433.0">
+        <columns>
+          <TableColumn fx:id="orderIdTableColumn" prefWidth="144.0" text="Order ID" />
+            <TableColumn fx:id="customerTableColumn" prefWidth="144.0" text="Customer" />
+            <TableColumn fx:id="paymentStatusTableColumn" prefWidth="144.0" text="Payment Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="315.0" layoutY="325.0" mnemonicParsing="false" onAction="#checkPaymentStatusButtonOnStock" prefHeight="25.0" prefWidth="182.0" text="Check  Payment Status" />
+      <Label fx:id="showPaymentResultLable" layoutX="315.0" layoutY="367.0" prefHeight="17.0" prefWidth="191.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpckg.kfc1.Customer.OrderHistoryController">
+   <children>
+      <VBox layoutX="74.0" layoutY="100.0" prefHeight="314.0" prefWidth="671.0" spacing="10.0">
+         <children>
+            <TableView fx:id="orderHistoryTableView" prefHeight="200.0" prefWidth="597.0">
+              <columns>
+                <TableColumn fx:id="orderIDTableColumn" prefWidth="225.0" text="Order ID" />
+                  <TableColumn fx:id="totalAmountTableColumn" prefWidth="222.0" text="Total Amount" />
+                  <TableColumn fx:id="dateTableColumn" prefWidth="223.0" text="Date" />
+              </columns>
+            </TableView>
+            <Label text="Order Details">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="orderDetailsTextArea" editable="false" prefHeight="147.0" prefRowCount="4" prefWidth="631.0" />
+         </children>
+      </VBox>
+      <Label layoutX="342.0" layoutY="35.0" text="Order History">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
