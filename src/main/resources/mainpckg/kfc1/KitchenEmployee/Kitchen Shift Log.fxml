@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpckg.kfc1.KitchenEmployee.KitchenShiftLogController">
    <children>
       <Label layoutX="298.0" layoutY="38.0" text="Shift Start and End Time">
@@ -26,20 +25,38 @@
          <children>
             <HBox prefHeight="70.0" prefWidth="533.0" spacing="20.0">
                <children>
-                  <Label text="Shift Start Time:" />
-                  <Label fx:id="startShiftTimeLable" text="Label" />
+                  <Label text="Shift Start Time:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="startShiftTimeLable" prefHeight="20.0" prefWidth="100.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
                </children>
             </HBox>
             <HBox layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="533.0" spacing="20.0">
                <children>
-                  <Label text="Shift End Time:" />
-                  <Label fx:id="endShiftTimeLable" prefHeight="7.0" prefWidth="28.0" text="Label" />
+                  <Label text="Shift End Time:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="endShiftTimeLable" prefHeight="20.0" prefWidth="100.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
                </children>
             </HBox>
             <HBox layoutX="10.0" layoutY="80.0" prefHeight="73.0" prefWidth="533.0" spacing="20.0">
                <children>
-                  <Label text="Total Duration:" />
-                  <Label fx:id="durationLable" text="Label" />
+                  <Label text="Total Duration:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label fx:id="durationLable" prefHeight="20.0" prefWidth="100.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
                </children>
             </HBox>
          </children>
