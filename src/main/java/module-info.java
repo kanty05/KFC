@@ -2,6 +2,7 @@ module mainpckg.kfc1 {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.base;
+    requires javafx.graphics;
 
 
     opens mainpckg.kfc1 to javafx.fxml;

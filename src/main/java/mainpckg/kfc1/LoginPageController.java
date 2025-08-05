@@ -1,5 +1,7 @@
 package mainpckg.kfc1;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 public class LoginPageController
