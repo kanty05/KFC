@@ -1,5 +1,9 @@
 package mainpckg.kfc1.KitchenEmployee;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
 public class UpdateOrderStatusController
 {
     @javafx.fxml.FXML

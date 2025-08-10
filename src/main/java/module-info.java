@@ -10,5 +10,7 @@ module mainpckg.kfc1 {
     opens mainpckg.kfc1.Customer to javafx.fxml, java.base ;
     opens mainpckg.kfc1.KitchenEmployee to javafx.fxml, java.base ;
 
-    exports mainpckg.kfc1;
+    exports mainpckg.kfc1 ;
+    exports mainpckg.kfc1.Customer ;
+    exports mainpckg.kfc1.KitchenEmployee ;
 }

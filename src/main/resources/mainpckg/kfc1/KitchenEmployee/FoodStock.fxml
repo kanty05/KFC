@@ -14,7 +14,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TableView layoutX="201.0" layoutY="124.0" prefHeight="200.0" prefWidth="418.0">
+      <TableView fx:id="foodStckTableView" layoutX="201.0" layoutY="124.0" prefHeight="200.0" prefWidth="418.0">
          <columns>
             <TableColumn fx:id="foodStockTableColumn" prefWidth="193.0" text="Item Name" />
             <TableColumn fx:id="stockAvailabilityTableColumn" prefWidth="225.0" text="Availability (In Stock/Out Of Stock)" />

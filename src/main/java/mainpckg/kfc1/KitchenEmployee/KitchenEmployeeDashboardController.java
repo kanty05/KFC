@@ -1,9 +1,9 @@
 package mainpckg.kfc1.KitchenEmployee;
 
+import javafx.event.ActionEvent;
+
 public class KitchenEmployeeDashboardController
 {
-    @javafx.fxml.FXML
-    private TextArea kitchenEmployeeDashboardTextArea;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -35,5 +35,9 @@ public class KitchenEmployeeDashboardController
 
     @javafx.fxml.FXML
     public void verifyPaymentButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void logOutButtonOnAction(ActionEvent actionEvent) {
     }
 }

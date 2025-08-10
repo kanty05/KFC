@@ -5,39 +5,14 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="customerDashboardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpckg.kfc1.Customer.CustomerDashboardController">
-   <left>
-      <VBox prefHeight="450.0" prefWidth="200.0" style="-fx-background-color: pink;" BorderPane.alignment="CENTER">
-         <children>
-            <Button mnemonicParsing="false" onAction="#browseMenuButtonOnAction" prefWidth="200.0" text="Browse Menu" />
-            <Button mnemonicParsing="false" onAction="#addItemToCartButtonOnAction" prefWidth="200.0" text="Cart" />
-            <Button mnemonicParsing="false" onAction="#cancelOrderButtonOnAction" prefWidth="200.0" text="Cancel Order" />
-            <Button mnemonicParsing="false" onAction="#trackOrderButtonOnAction" prefHeight="25.0" prefWidth="200.0" text="Track Order" />
-            <Button layoutX="10.0" layoutY="85.0" mnemonicParsing="false" onAction="#makePaymentButtonOnAction" prefHeight="25.0" prefWidth="200.0" text="Make Payment" />
-            <Button layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onAction="#giveReviewButtonOnAction" prefHeight="25.0" prefWidth="200.0" text="Give review" />
-            <Button layoutX="10.0" layoutY="135.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" prefHeight="25.0" prefWidth="200.0" text="Logout" />
-         </children>
-      </VBox>
-   </left>
-   <center>
-      <AnchorPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
-         <children>
-            <Label layoutX="249.0" layoutY="28.0" text="Dashboard">
-               <font>
-                  <Font name="System Bold" size="20.0" />
-               </font>
-            </Label>
-            <TextArea fx:id="infoTextArea" layoutX="60.0" layoutY="79.0" prefHeight="285.0" prefWidth="495.0" />
-         </children></AnchorPane>
-   </center>
-   <top>
-      <MenuBar BorderPane.alignment="CENTER">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpckg.kfc1.Customer.CustomerDashboardController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="800.0" AnchorPane.topAnchor="2.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -56,5 +31,27 @@
           </Menu>
         </menus>
       </MenuBar>
-   </top>
-</BorderPane>
+      <BorderPane layoutX="1.0" layoutY="27.0" prefHeight="422.0" prefWidth="800.0">
+         <top>
+            <Label text="Dashboard" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </top>
+         <left>
+            <VBox alignment="CENTER" prefHeight="395.0" prefWidth="799.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#browseMenuButtonOnAction" prefHeight="25.0" prefWidth="210.0" text="Browse Menu" />
+                  <Button mnemonicParsing="false" onAction="#cancelOrderButtonOnAction" prefHeight="25.0" prefWidth="210.0" text="Cancel Order" />
+                  <Button mnemonicParsing="false" onAction="#trackOrderButtonOnAction" prefHeight="25.0" prefWidth="210.0" text="Track Order" />
+                  <Button layoutX="305.0" layoutY="230.0" mnemonicParsing="false" onAction="#makePaymentButtonOnAction" prefHeight="25.0" prefWidth="210.0" text="Make Payment" />
+                  <Button layoutX="305.0" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="210.0" text="View Order History" />
+                  <Button layoutX="305.0" layoutY="125.0" mnemonicParsing="false" onAction="#giveReviewButtonOnAction" prefHeight="25.0" prefWidth="210.0" text="Give Review" />
+                  <Button layoutX="305.0" layoutY="283.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" prefHeight="25.0" prefWidth="210.0" text="Logout" />
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

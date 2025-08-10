@@ -3,17 +3,16 @@ package mainpckg.kfc1;
 import java.time.LocalDate;
 
 public class User {
-    private String id,name,email,password,phoneNo ;
-    private LocalDate dob,doj ;
+    private String id, name, email, password, phoneNo;
+    private LocalDate dob;
 
-    public User(String id, String name, String email, String password, LocalDate dob, String phoneNo, LocalDate doj) {
+    public User(String id, String name, String email, String password, String phoneNo, LocalDate dob) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.password = password;
-        this.dob = dob;
         this.phoneNo = phoneNo;
-        this.doj = doj;
+        this.dob = dob;
     }
 
     public String getId() {
@@ -64,14 +63,6 @@ public class User {
         this.dob = dob;
     }
 
-    public LocalDate getDoj() {
-        return doj;
-    }
-
-    public void setDoj(LocalDate doj) {
-        this.doj = doj;
-    }
-
     @Override
     public String toString() {
         return "User{" +
@@ -81,7 +72,6 @@ public class User {
                 ", password='" + password + '\'' +
                 ", phoneNo='" + phoneNo + '\'' +
                 ", dob=" + dob +
-                ", doj=" + doj +
                 '}';
     }
 }
