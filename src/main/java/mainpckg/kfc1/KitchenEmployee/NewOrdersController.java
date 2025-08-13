@@ -7,17 +7,13 @@ import javafx.scene.control.TableView;
 public class NewOrdersController
 {
     @javafx.fxml.FXML
-    private TableColumn orderIDTableColumn;
+    private TableColumn<KitchenEmployee,String> orderIDTableColumn;
     @javafx.fxml.FXML
-    private TableColumn cutomerNameTableColumn;
+    private TableColumn<KitchenEmployee,String> itemsTableColumn;
     @javafx.fxml.FXML
-    private TableColumn itemsTableColumn;
+    private TableColumn<KitchenEmployee,String> totalTableColumn;
     @javafx.fxml.FXML
-    private TableColumn timePlacedTableColumn;
-    @javafx.fxml.FXML
-    private TableColumn totalTableColumn;
-    @javafx.fxml.FXML
-    private TableView newOrdersTableView;
+    private TableView<KitchenEmployee> newOrdersTableView;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -7,13 +7,13 @@ import javafx.scene.control.TableView;
 public class CancelOrderController
 {
     @javafx.fxml.FXML
-    private TableColumn orderIDTableColumn;
+    private TableColumn<Customer,String> orderIDTableColumn;
     @javafx.fxml.FXML
-    private TableColumn statusTableColumn;
+    private TableColumn<Customer,String> statusTableColumn;
     @javafx.fxml.FXML
-    private TableColumn priceTableColumn;
+    private TableColumn<Customer,Integer> priceTableColumn;
     @javafx.fxml.FXML
-    private TableView myOrderTabelView;
+    private TableView<Customer> cancelOrderTableView;
 
     @javafx.fxml.FXML
     public void initialize() {

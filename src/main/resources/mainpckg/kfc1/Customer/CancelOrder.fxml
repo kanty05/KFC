@@ -7,24 +7,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpckg.kfc1.Customer.CancelOrderController">
    <children>
-      <Label layoutX="386.0" layoutY="32.0" text="Cancel Order">
+      <Label layoutX="349.0" layoutY="38.0" text="Cancel Order">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="140.0" layoutY="119.0" text="My Orders:">
+      <Label layoutX="125.0" layoutY="123.0" text="My Orders:">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Button layoutX="379.0" layoutY="343.0" mnemonicParsing="false" onAction="#cancelOrderButtonOnAction" text="CancelOrder" />
-      <TableView fx:id="myOrderTabelView" layoutX="230.0" layoutY="119.0" prefHeight="200.0" prefWidth="403.0">
+      <Button layoutX="388.0" layoutY="332.0" mnemonicParsing="false" onAction="#cancelOrderButtonOnAction" text="CancelOrder" />
+      <TableView fx:id="cancelOrderTableView" layoutX="235.0" layoutY="123.0" prefHeight="200.0" prefWidth="403.0">
         <columns>
-          <TableColumn fx:id="orderIDTableColumn" prefWidth="131.0" text="Order ID" />
-          <TableColumn fx:id="priceTableColumn" prefWidth="135.0" text="Price" />
+          <TableColumn fx:id="orderIDTableColumn" prefWidth="143.0" text="Order ID" />
+          <TableColumn fx:id="priceTableColumn" prefWidth="123.0" text="Price" />
             <TableColumn fx:id="statusTableColumn" prefWidth="135.0" text="Status" />
         </columns>
       </TableView>

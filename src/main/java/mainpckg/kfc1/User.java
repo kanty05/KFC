@@ -2,14 +2,16 @@ package mainpckg.kfc1;
 
 import java.time.LocalDate;
 
-public class User {
-    private String id, name, email, password, phoneNo;
-    private LocalDate dob;
+public abstract class User {
+    private String id, name, email, gender, address, password, phoneNo ;
+    private LocalDate dob ;
 
-    public User(String id, String name, String email, String password, String phoneNo, LocalDate dob) {
-        this.id = id;
+    public User(String name, String email, String gender, String address, String password, String phoneNo, LocalDate dob) {
+        this.id = this.generateID() ;
         this.name = name;
         this.email = email;
+        this.gender = gender;
+        this.address = address;
         this.password = password;
         this.phoneNo = phoneNo;
         this.dob = dob;
@@ -39,6 +41,22 @@ public class User {
         this.email = email;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public String getPassword() {
         return password;
     }
@@ -65,13 +83,20 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", phoneNo='" + phoneNo + '\'' +
-                ", dob=" + dob +
+        return
+                "Id='" + id + '\n' +
+                "Name='" + name + '\n' +
+                "Email='" + email + '\n' +
+                "Gender='" + gender + '\n' +
+                "Address='" + address + '\n' +
+                "Password='" + password + '\n' +
+                "PhoneNo='" + phoneNo + '\n' +
+                "Dob=" + dob +
                 '}';
     }
+    public abstract String generateID() ;
 }
+
+
+
+

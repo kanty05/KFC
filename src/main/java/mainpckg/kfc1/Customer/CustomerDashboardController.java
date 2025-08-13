@@ -1,9 +1,17 @@
 package mainpckg.kfc1.Customer;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.TextArea;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 
 public class CustomerDashboardController
 {
+
+    @javafx.fxml.FXML
+    private TextArea InfoTextArea;
+    @javafx.fxml.FXML
+    private BorderPane CustomerBorderPane;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -39,5 +47,9 @@ public class CustomerDashboardController
 
     @Deprecated
     public void orderHistoryButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void viewOrderHistoryButtonOnAction(ActionEvent actionEvent) {
     }
 }

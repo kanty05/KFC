@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpckg.kfc1.KitchenEmployee.UpdateOrderStatusController">
    <children>
       <Label layoutX="330.0" layoutY="48.0" text="Update Order Status">
@@ -16,15 +15,14 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TableView fx:id="updateOrderStatusTableView" layoutX="183.0" layoutY="126.0" prefHeight="198.0" prefWidth="469.0">
+      <TableView fx:id="updateOrderStatusTableView" layoutX="263.0" layoutY="126.0" prefHeight="198.0" prefWidth="309.0">
         <columns>
-          <TableColumn fx:id="orderIDTableColumn" prefWidth="157.0" text="Order ID" />
-            <TableColumn fx:id="customerTableColumn" prefWidth="163.0" text="Customer" />
-            <TableColumn fx:id="currentStatusTableColumn" prefWidth="150.0" text="Current Status" />
+          <TableColumn fx:id="orderIDTableColumn" prefWidth="155.0" text="Order ID" />
+            <TableColumn fx:id="currentStatusTableColumn" prefWidth="152.0" text="Current Status" />
         </columns>
       </TableView>
-      <ComboBox layoutX="255.0" layoutY="353.0" onAction="#newStatusComboBox" prefWidth="150.0" />
-      <Label layoutX="183.0" layoutY="357.0" text="New Status:" />
-      <Button layoutX="561.0" layoutY="353.0" mnemonicParsing="false" onAction="#updateStatusButtonOnAction" text="Update Status" />
+      <ComboBox layoutX="317.0" layoutY="353.0" onAction="#newStatusComboBox" prefWidth="150.0" />
+      <Label layoutX="244.0" layoutY="357.0" text="New Status:" />
+      <Button layoutX="491.0" layoutY="353.0" mnemonicParsing="false" onAction="#updateStatusButtonOnAction" text="Update Status" />
    </children>
 </AnchorPane>

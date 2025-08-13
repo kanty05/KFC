@@ -5,14 +5,15 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpckg.kfc1.Customer.CustomerDashboardController">
-   <children>
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="800.0" AnchorPane.topAnchor="2.0">
+<BorderPane fx:id="CustomerBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpckg.kfc1.Customer.CustomerDashboardController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -31,27 +32,30 @@
           </Menu>
         </menus>
       </MenuBar>
-      <BorderPane layoutX="1.0" layoutY="27.0" prefHeight="422.0" prefWidth="800.0">
-         <top>
-            <Label text="Dashboard" BorderPane.alignment="CENTER">
+   </top>
+   <center>
+      <AnchorPane prefHeight="450.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="363.0" layoutY="23.0" text="Dashboard">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-         </top>
-         <left>
-            <VBox alignment="CENTER" prefHeight="395.0" prefWidth="799.0" spacing="10.0" BorderPane.alignment="CENTER">
-               <children>
-                  <Button mnemonicParsing="false" onAction="#browseMenuButtonOnAction" prefHeight="25.0" prefWidth="210.0" text="Browse Menu" />
-                  <Button mnemonicParsing="false" onAction="#cancelOrderButtonOnAction" prefHeight="25.0" prefWidth="210.0" text="Cancel Order" />
-                  <Button mnemonicParsing="false" onAction="#trackOrderButtonOnAction" prefHeight="25.0" prefWidth="210.0" text="Track Order" />
-                  <Button layoutX="305.0" layoutY="230.0" mnemonicParsing="false" onAction="#makePaymentButtonOnAction" prefHeight="25.0" prefWidth="210.0" text="Make Payment" />
-                  <Button layoutX="305.0" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="210.0" text="View Order History" />
-                  <Button layoutX="305.0" layoutY="125.0" mnemonicParsing="false" onAction="#giveReviewButtonOnAction" prefHeight="25.0" prefWidth="210.0" text="Give Review" />
-                  <Button layoutX="305.0" layoutY="283.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" prefHeight="25.0" prefWidth="210.0" text="Logout" />
-               </children>
-            </VBox>
-         </left>
-      </BorderPane>
-   </children>
-</AnchorPane>
+            <TextArea fx:id="InfoTextArea" layoutX="194.0" layoutY="113.0" prefHeight="230.0" prefWidth="431.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <VBox prefHeight="425.0" prefWidth="182.0" style="-fx-background-color: pink;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#browseMenuButtonOnAction" prefHeight="29.0" prefWidth="319.0" text="Browse Menu" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#cancelOrderButtonOnAction" prefHeight="29.0" prefWidth="348.0" text="Cancel Order" />
+            <Button layoutX="10.0" layoutY="40.0" mnemonicParsing="false" onAction="#trackOrderButtonOnAction" prefHeight="29.0" prefWidth="417.0" text="Track Order" />
+            <Button layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onAction="#makePaymentButtonOnAction" prefHeight="30.0" prefWidth="354.0" text="Make Payment" />
+            <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#viewOrderHistoryButtonOnAction" prefHeight="30.0" prefWidth="343.0" text="View Order History" />
+            <Button layoutX="10.0" layoutY="85.0" mnemonicParsing="false" onAction="#giveReviewButtonOnAction" prefHeight="30.0" prefWidth="423.0" text="Give Review" />
+            <Button layoutX="10.0" layoutY="135.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" prefHeight="30.0" prefWidth="387.0" text="Log out" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

@@ -8,15 +8,15 @@ import javafx.scene.control.TextField;
 public class ManageFoodInventoryController
 {
     @javafx.fxml.FXML
-    private TableView inventoryManagementTableView;
+    private TableView<KitchenEmployee> inventoryManagementTableView;
     @javafx.fxml.FXML
-    private TableColumn currentStockTableColumn;
+    private TableColumn<KitchenEmployee,String> currentStockTableColumn;
     @javafx.fxml.FXML
     private TextField newStockAmountTextField;
     @javafx.fxml.FXML
-    private TableColumn categoryTableColumn;
+    private TableColumn<KitchenEmployee,String> categoryTableColumn;
     @javafx.fxml.FXML
-    private TableColumn itemNameTableColumn;
+    private TableColumn<KitchenEmployee,String> itemNameTableColumn;
 
     @javafx.fxml.FXML
     public void initialize() {

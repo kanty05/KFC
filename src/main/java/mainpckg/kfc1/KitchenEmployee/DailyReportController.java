@@ -8,17 +8,17 @@ import javafx.scene.control.TableView;
 public class DailyReportController
 {
     @javafx.fxml.FXML
-    private TableColumn orderIDTableColumn;
+    private TableColumn<KitchenEmployee,String> orderIDTableColumn;
     @javafx.fxml.FXML
     private Label totalOrdersLable;
     @javafx.fxml.FXML
     private Label totalRevenueLable;
     @javafx.fxml.FXML
-    private TableView dailyReportTableView;
+    private TableView<KitchenEmployee> dailyReportTableView;
     @javafx.fxml.FXML
-    private TableColumn itemsTableColumn;
+    private TableColumn<KitchenEmployee,String> itemsTableColumn;
     @javafx.fxml.FXML
-    private TableColumn totalAmountTableColumn;
+    private TableColumn<KitchenEmployee,String> totalAmountTableColumn;
     @javafx.fxml.FXML
     private Label itemsSoldLable;
 

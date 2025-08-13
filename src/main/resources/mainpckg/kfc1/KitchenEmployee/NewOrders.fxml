@@ -7,16 +7,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpckg.kfc1.KitchenEmployee.NewOrdersController">
    <children>
-      <TableView fx:id="newOrdersTableView" layoutX="57.0" layoutY="143.0" prefHeight="241.0" prefWidth="686.0">
+      <TableView fx:id="newOrdersTableView" layoutX="109.0" layoutY="144.0" prefHeight="241.0" prefWidth="536.0">
         <columns>
-          <TableColumn fx:id="orderIDTableColumn" prefWidth="137.0" text="Order ID" />
-            <TableColumn fx:id="cutomerNameTableColumn" prefWidth="137.0" text="Customer Name " />
-            <TableColumn fx:id="itemsTableColumn" prefWidth="137.0" text="Items" />
-            <TableColumn fx:id="totalTableColumn" prefWidth="137.0" text="Total" />
-            <TableColumn fx:id="timePlacedTableColumn" prefWidth="137.0" text="Time Placed" />
+          <TableColumn fx:id="orderIDTableColumn" prefWidth="171.0" text="Order ID" />
+            <TableColumn fx:id="itemsTableColumn" prefWidth="179.0" text="Items" />
+            <TableColumn fx:id="totalTableColumn" prefWidth="185.0" text="Total" />
         </columns>
       </TableView>
       <Label layoutX="350.0" layoutY="26.0" text="New Orders">
@@ -24,6 +21,6 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="632.0" layoutY="95.0" mnemonicParsing="false" onAction="#refreshButtonOnAction" prefHeight="25.0" prefWidth="111.0" text="Refresh" />
+      <Button layoutX="528.0" layoutY="96.0" mnemonicParsing="false" onAction="#refreshButtonOnAction" prefHeight="25.0" prefWidth="111.0" text="Refresh" />
    </children>
 </AnchorPane>

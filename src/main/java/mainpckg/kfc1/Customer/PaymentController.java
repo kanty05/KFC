@@ -12,7 +12,7 @@ public class PaymentController
     @javafx.fxml.FXML
     private TextField cardOrMobileNoTextField;
     @javafx.fxml.FXML
-    private ComboBox paymentMethodCombobox;
+    private ComboBox<String> paymentMethodCombobox;
 
     @javafx.fxml.FXML
     public void initialize() {

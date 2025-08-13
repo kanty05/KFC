@@ -1,38 +1,39 @@
 package mainpckg.kfc1.Customer;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.Spinner;
-import javafx.scene.control.Tab;
-import javafx.scene.control.TabPane;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import mainpckg.kfc1.HelloApplication;
 
 public class BrowseMenuController
 {
     @javafx.fxml.FXML
-    private Spinner superChargerBurgerSpinner;
+    private Spinner<Integer> superChargerBurgerSpinner;
     @javafx.fxml.FXML
     private TabPane manuTabPane;
     @javafx.fxml.FXML
-    private Spinner zingerBurgerSpinner;
+    private Spinner<Integer> zingerBurgerSpinner;
     @javafx.fxml.FXML
-    private Spinner TwelvePcChickenBucketSpinner;
+    private Spinner<Integer> TwelvePcChickenBucketSpinner;
     @javafx.fxml.FXML
-    private Spinner eightPcChickenBucketSpinner;
+    private Spinner<Integer> eightPcChickenBucketSpinner;
     @javafx.fxml.FXML
     private Tab friesTabPane;
     @javafx.fxml.FXML
-    private Spinner FriesLargeSpinner;
+    private Spinner<Integer> FriesLargeSpinner;
     @javafx.fxml.FXML
     private Tab chickenTabPane;
     @javafx.fxml.FXML
-    private Spinner doubleZingerBurgerSpinner;
+    private Spinner<Integer> doubleZingerBurgerSpinner;
     @javafx.fxml.FXML
     private Tab burgerTabPane;
     @javafx.fxml.FXML
-    private Spinner friesSmallSpinner;
+    private Spinner<Integer> friesSmallSpinner;
     @javafx.fxml.FXML
-    private Spinner sicPcWingsBucketSpinner;
+    private Spinner<Integer> sicPcWingsBucketSpinner;
     @javafx.fxml.FXML
-    private Spinner friesMediumSpinner;
+    private Spinner<Integer> friesMediumSpinner;
     @javafx.fxml.FXML
     private Button viewCartButton;
 

@@ -7,13 +7,13 @@ import javafx.scene.control.TableView;
 public class UpdateOrderStatusController
 {
     @javafx.fxml.FXML
-    private TableColumn orderIDTableColumn;
+    private TableColumn<KitchenEmployee,String> orderIDTableColumn;
     @javafx.fxml.FXML
-    private TableView updateOrderStatusTableView;
+    private TableView<KitchenEmployee>updateOrderStatusTableView;
     @javafx.fxml.FXML
-    private TableColumn customerTableColumn;
+    private TableColumn<KitchenEmployee,String> customerTableColumn;
     @javafx.fxml.FXML
-    private TableColumn currentStatusTableColumn;
+    private TableColumn<KitchenEmployee,String> currentStatusTableColumn;
 
     @javafx.fxml.FXML
     public void initialize() {

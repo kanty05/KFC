@@ -8,15 +8,13 @@ import javafx.scene.control.TableView;
 public class VerifyPaymentStatusController
 {
     @javafx.fxml.FXML
-    private TableView paymentVerificationTableView;
-    @javafx.fxml.FXML
-    private TableColumn paymentStatusTableColumn;
-    @javafx.fxml.FXML
-    private TableColumn orderIdTableColumn;
+    private TableColumn<KitchenEmployee,String> paymentStatusTableColumn;
     @javafx.fxml.FXML
     private Label showPaymentResultLable;
     @javafx.fxml.FXML
-    private TableColumn customerTableColumn;
+    private TableColumn<KitchenEmployee,String> orderIDTableColumn;
+    @javafx.fxml.FXML
+    private TableView<KitchenEmployee> paymentVerifyTableView;
 
     @javafx.fxml.FXML
     public void initialize() {

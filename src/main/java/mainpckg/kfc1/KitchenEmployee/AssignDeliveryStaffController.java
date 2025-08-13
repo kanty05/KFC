@@ -5,22 +5,22 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
+import java.time.LocalDateTime;
+
 public class AssignDeliveryStaffController
 {
     @javafx.fxml.FXML
-    private TableColumn orderIDTableColumn;
+    private TableColumn<KitchenEmployee,String> orderIDTableColumn;
     @javafx.fxml.FXML
-    private TableColumn customerNameTableColumn;
+    private TableColumn<KitchenEmployee,String> customerNameTableColumn;
     @javafx.fxml.FXML
-    private TableColumn itemsTableColumn;
+    private TableColumn<KitchenEmployee,String> itemsTableColumn;
     @javafx.fxml.FXML
-    private TableColumn timetableColumn;
+    private ComboBox<String> selectdeliveryStaffComboBox;
     @javafx.fxml.FXML
-    private ComboBox selectdeliveryStaffComboBox;
+    private TableColumn<KitchenEmployee,String> totalTableColumn;
     @javafx.fxml.FXML
-    private TableColumn totalTableColumn;
-    @javafx.fxml.FXML
-    private TableView assignDeliveryStaffTableView;
+    private TableView<KitchenEmployee> assignDeliveryStaffTableView;
 
     @javafx.fxml.FXML
     public void initialize() {
