@@ -30,6 +30,8 @@ public class CreateAccountPageController
     private TextArea addressTextArea;
     @javafx.fxml.FXML
     private DatePicker dateofbirthDatePicker;
+    @javafx.fxml.FXML
+    private ToggleGroup tg;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -37,7 +39,7 @@ public class CreateAccountPageController
 
     @javafx.fxml.FXML
     public void createAccountButtonOnAction(ActionEvent actionEvent) {
-        String name,email,phoneNo,gender="",address,password;
+        String name,email,phoneNo,gender="",address,password ;
         LocalDate dob;
 
         name=nameTextField.getText();
@@ -70,7 +72,7 @@ public class CreateAccountPageController
         dateofbirthDatePicker.setValue(null);
 
         if (maleRadioButton.isSelected()) {
-            maleRadioButton.setSelected(false); ;
+            maleRadioButton.setSelected(false);
         }
         else if (femaleRadioButton.isSelected()) {
             femaleRadioButton.setSelected(false);

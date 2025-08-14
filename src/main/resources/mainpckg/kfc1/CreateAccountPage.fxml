@@ -7,9 +7,9 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpckg.kfc1.CreateAccountPageController">
    <children>
@@ -32,9 +32,12 @@
       <PasswordField fx:id="passwordPasswordField" layoutX="572.0" layoutY="201.0" />
       <DatePicker fx:id="dateofbirthDatePicker" layoutX="198.0" layoutY="169.0" />
       <Label layoutX="487.0" layoutY="117.0" text="Gender:" />
-      <RadioButton fx:id="maleRadioButton" layoutX="547.0" layoutY="117.0" mnemonicParsing="false" text="Male" />
-      <RadioButton fx:id="femaleRadioButton" layoutX="606.0" layoutY="117.0" mnemonicParsing="false" text="Female" />
-      <RadioButton fx:id="othersRadioButton" layoutX="672.0" layoutY="117.0" mnemonicParsing="false" text="Others" />
+      <RadioButton fx:id="maleRadioButton" layoutX="547.0" layoutY="117.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="tg" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="femaleRadioButton" layoutX="606.0" layoutY="117.0" mnemonicParsing="false" text="Female" toggleGroup="$tg" />
+      <RadioButton fx:id="othersRadioButton" layoutX="672.0" layoutY="117.0" mnemonicParsing="false" text="Others" toggleGroup="$tg" />
       <Button layoutX="553.0" layoutY="264.0" mnemonicParsing="false" onAction="#createAccountButtonOnAction" prefHeight="25.0" prefWidth="107.0" text="Create Account" />
       <TextArea fx:id="outputTextArea" editable="false" layoutX="196.0" layoutY="328.0" prefHeight="98.0" prefWidth="426.0" wrapText="true" />
    </children>

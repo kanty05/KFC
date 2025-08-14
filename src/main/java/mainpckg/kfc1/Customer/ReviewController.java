@@ -1,9 +1,7 @@
 package mainpckg.kfc1.Customer;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
 
 public class ReviewController
 {

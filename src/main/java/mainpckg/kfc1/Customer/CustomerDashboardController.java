@@ -70,7 +70,7 @@ public class CustomerDashboardController
     }
 
     @javafx.fxml.FXML
-    public void viewCartButtonOnAction(ActionEvent actionEvent) {
+    public void viewCartButtonOnAction(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Customer/Cart.fxml"));
         CustomerBorderPane.setCenter(fxmlLoader.load());
     }
