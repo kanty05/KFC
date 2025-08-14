@@ -49,6 +49,7 @@
       <VBox prefHeight="425.0" prefWidth="182.0" style="-fx-background-color: pink;" BorderPane.alignment="CENTER">
          <children>
             <Button mnemonicParsing="false" onAction="#browseMenuButtonOnAction" prefHeight="29.0" prefWidth="319.0" text="Browse Menu" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#viewCartButtonOnAction" prefHeight="29.0" prefWidth="319.0" text="View Cart" />
             <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#cancelOrderButtonOnAction" prefHeight="29.0" prefWidth="348.0" text="Cancel Order" />
             <Button layoutX="10.0" layoutY="40.0" mnemonicParsing="false" onAction="#trackOrderButtonOnAction" prefHeight="29.0" prefWidth="417.0" text="Track Order" />
             <Button layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onAction="#makePaymentButtonOnAction" prefHeight="30.0" prefWidth="354.0" text="Make Payment" />

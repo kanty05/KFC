@@ -2,9 +2,15 @@ package mainpckg.kfc1.Customer;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 import mainpckg.kfc1.HelloApplication;
+
+import java.io.IOException;
 
 public class BrowseMenuController
 {
@@ -35,7 +41,7 @@ public class BrowseMenuController
     @javafx.fxml.FXML
     private Spinner<Integer> friesMediumSpinner;
     @javafx.fxml.FXML
-    private Button viewCartButton;
+    private AnchorPane customerAnchorPane;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -75,9 +81,5 @@ public class BrowseMenuController
 
     @javafx.fxml.FXML
     public void sixPcWingsBucketAddToCartButtonOnAction(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void viewCartButtonOnAction(ActionEvent actionEvent) {
     }
 }

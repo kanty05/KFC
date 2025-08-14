@@ -11,6 +11,7 @@ import javafx.scene.control.Spinner;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import mainpckg.kfc1.Customer.Customer;
+import mainpckg.kfc1.Customer.CustomerDashboardController;
 import mainpckg.kfc1.KitchenEmployee.KitchenEmployee;
 import mainpckg.kfc1.KitchenEmployee.KitchenEmployeeDashboardController;
 
@@ -29,13 +30,13 @@ public class LoginPageController {
 
     @javafx.fxml.FXML
     public void initialize() {
-        KitchenEmployee kitchenEmployee = new KitchenEmployee("employee", "employee1@email.com", "female", "Dhaka", "1234", "01987767", LocalDate.of(2002, 3, 25));
-        kitchenEmployeeList.add(kitchenEmployee);
+        KitchenEmployee kitchenEmployee1 = new KitchenEmployee("employee1", "employee1@email.com", "female", "Dhaka", "1234", "01987767", LocalDate.of(2002, 3, 25));
+        kitchenEmployeeList.add(kitchenEmployee1);
 
-        //KitchenEmployee kitchenEmployee2 = new KitchenEmployee("employee2", "employee2@email.com", "female", "Dhaka", "1234", "01987767", LocalDate.of(2002, 3, 25));
-        //kitchenEmployeeList.add(kitchenEmployee2);
+        KitchenEmployee kitchenEmployee2 = new KitchenEmployee("employee2", "employee2@email.com", "male", "Dhaka", "5678", "01987767", LocalDate.of(2002, 3, 25));
+        kitchenEmployeeList.add(kitchenEmployee2);
 
-        Customer customer = new Customer("customer1","customer@email.com","male","Dhaka","5678","099876543",LocalDate.of(2003,2,04));
+        Customer customer = new Customer("purnota","customer@email.com","male","Dhaka","5555","099876543",LocalDate.of(2003,2,04));
         System.out.println(customer.getId());
         customerList.add(customer);
     }
@@ -70,8 +71,8 @@ public class LoginPageController {
                         Parent root= null ;
                         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Customer/CustomerDashboard.fxml"));
                         root = fxmlLoader.load();
-                        KitchenEmployeeDashboardController kitchenEmployeeDashboardController = fxmlLoader.getController();
-                        kitchenEmployeeDashboardController.setter(kitchenEmployee);
+                        CustomerDashboardController customerDashboardController = fxmlLoader.getController();
+                        customerDashboardController.setter(customer);
                         Scene scene = new Scene(root);
                         Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
                         stage.setTitle("Customer Dashboard");
@@ -86,6 +87,8 @@ public class LoginPageController {
                         Parent root= null ;
                         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("KitchenEmployee/KitchenEmployeeDashboard.fxml"));
                         root = fxmlLoader.load();
+                        KitchenEmployeeDashboardController kitchenEmployeeDashboardController = fxmlLoader.getController();
+                        kitchenEmployeeDashboardController.setter(kitchenEmployee);
                         Scene scene = new Scene(root);
                         Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
                         stage.setTitle("Kitchen Employee Dashboard");

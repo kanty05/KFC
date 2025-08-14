@@ -12,7 +12,13 @@ public class ReviewController
     @javafx.fxml.FXML
     private TextArea commentTextArea;
     @javafx.fxml.FXML
-    private ListView<Customer> completedOrderListView;
+    private TableView CompletedOrderTableView;
+    @javafx.fxml.FXML
+    private TableColumn DateTableColumn;
+    @javafx.fxml.FXML
+    private TableColumn TotalAmountTableColumn;
+    @javafx.fxml.FXML
+    private TableColumn ItemTableColumn;
 
     @javafx.fxml.FXML
     public void initialize() {

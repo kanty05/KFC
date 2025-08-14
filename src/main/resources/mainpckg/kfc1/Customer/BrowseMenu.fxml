@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpckg.kfc1.Customer.BrowseMenuController">
+<AnchorPane fx:id="customerAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpckg.kfc1.Customer.BrowseMenuController">
    <children>
-      <TabPane fx:id="manuTabPane" layoutX="31.0" layoutY="56.0" prefHeight="340.0" prefWidth="739.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane fx:id="manuTabPane" layoutX="31.0" layoutY="74.0" prefHeight="340.0" prefWidth="739.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab fx:id="burgerTabPane" text="Burger">
             <content>
@@ -219,6 +219,5 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="viewCartButton" layoutX="640.0" layoutY="411.0" mnemonicParsing="false" onAction="#viewCartButtonOnAction" prefHeight="25.0" prefWidth="106.0" text="View Cart" />
    </children>
 </AnchorPane>
