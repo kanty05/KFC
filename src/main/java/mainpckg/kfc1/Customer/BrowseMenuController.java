@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 import mainpckg.kfc1.HelloApplication;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class BrowseMenuController
 {
@@ -43,12 +44,15 @@ public class BrowseMenuController
     @javafx.fxml.FXML
     private AnchorPane customerAnchorPane;
 
+    ArrayList<Customer> customerList;
+
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
     public void twelvePcChickenBucketAddToCartButtonOnAction(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML

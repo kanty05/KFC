@@ -5,7 +5,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.VBox;
+
+import java.util.ArrayList;
 
 public class CartController
 {
@@ -24,8 +27,13 @@ public class CartController
     @javafx.fxml.FXML
     private Button checkOutButton;
 
+
     @javafx.fxml.FXML
     public void initialize() {
+        itemNameTableColumn.setCellValueFactory(new PropertyValueFactory<>("items"));
+        quantityTableColumn.setCellValueFactory(new PropertyValueFactory<>("quantity"));
+        priceTableColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
+
     }
 
     @javafx.fxml.FXML

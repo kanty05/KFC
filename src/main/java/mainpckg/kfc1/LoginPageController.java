@@ -36,9 +36,13 @@ public class LoginPageController {
         KitchenEmployee kitchenEmployee2 = new KitchenEmployee("employee2", "employee2@email.com", "male", "Dhaka", "5678", "01987767", LocalDate.of(2002, 3, 25));
         kitchenEmployeeList.add(kitchenEmployee2);
 
-        Customer customer = new Customer("purnota","customer@email.com","male","Dhaka","5555","099876543",LocalDate.of(2003,2,04));
-        System.out.println(customer.getId());
-        customerList.add(customer);
+        Customer customer1 = new Customer("customer1","customer1@email.com","female","Dhaka","5555","099876543",LocalDate.of(2003,2,4));
+        System.out.println(customer1.getId());
+        customerList.add(customer1);
+
+        Customer customer2 = new Customer("customer2","customer2@email.com","male","Dhaka","1111","014446543",LocalDate.of(2003,9,21));
+        System.out.println(customer2.getId());
+        customerList.add(customer2);
     }
 
     @javafx.fxml.FXML
@@ -84,16 +88,16 @@ public class LoginPageController {
             } else if (id.length() == 8){
                 for (KitchenEmployee kitchenEmployee: kitchenEmployeeList){
                     if(kitchenEmployee.login(id,password) != null){
-                        Parent root= null ;
-                        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("KitchenEmployee/KitchenEmployeeDashboard.fxml"));
-                        root = fxmlLoader.load();
-                        KitchenEmployeeDashboardController kitchenEmployeeDashboardController = fxmlLoader.getController();
-                        kitchenEmployeeDashboardController.setter(kitchenEmployee);
-                        Scene scene = new Scene(root);
-                        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-                        stage.setTitle("Kitchen Employee Dashboard");
-                        stage.setScene(scene);
-                        stage.show();
+                       Parent root= null ;
+                       FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("KitchenEmployee/KitchenEmployeeDashboard.fxml"));
+                       root = fxmlLoader.load();
+                       KitchenEmployeeDashboardController kitchenEmployeeDashboardController = fxmlLoader.getController();
+                       kitchenEmployeeDashboardController.setter(kitchenEmployee);
+                       Scene scene = new Scene(root);
+                       Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+                       stage.setTitle("Kitchen Employee Dashboard");
+                       stage.setScene(scene);
+                       stage.show();
                     }
                 }
             } else {
@@ -106,6 +110,14 @@ public class LoginPageController {
     }
 
     @javafx.fxml.FXML
-    public void createaccountOnActionButton(ActionEvent actionEvent) {
+    public void createaccountOnActionButton(ActionEvent actionEvent) throws IOException {
+        Parent root= null ;
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CreateAccountPage.fxml"));
+        root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        stage.setTitle("Create Account");
+        stage.setScene(scene);
+        stage.show();
     }
 }

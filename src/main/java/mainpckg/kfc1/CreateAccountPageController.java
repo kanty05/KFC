@@ -7,9 +7,12 @@ import javafx.scene.control.*;
 import mainpckg.kfc1.Customer.Customer;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class CreateAccountPageController
 {
+    ArrayList<Customer> customerList = new ArrayList<Customer>();
+
     @javafx.fxml.FXML
     private TextField phoneNoTextField;
     @javafx.fxml.FXML
@@ -63,6 +66,7 @@ public class CreateAccountPageController
 
         outputTextArea.clear();
         outputTextArea.setText(customer.toString());
+
 
         nameTextField.clear();
         emailTextField.clear();

@@ -18,6 +18,7 @@ public class CustomerDashboardController
     private BorderPane CustomerBorderPane;
 
     Customer customer;
+
     public void setter(Customer customer){
         this.customer = customer;
         InfoTextArea.setText(customer.toString());

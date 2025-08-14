@@ -10,19 +10,19 @@
 
 <AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpckg.kfc1.Customer.CartController">
    <children>
-      <Label layoutX="379.0" layoutY="37.0" prefHeight="20.0" prefWidth="43.0" text="Cart">
+      <Label layoutX="393.0" layoutY="33.0" prefHeight="20.0" prefWidth="43.0" text="Cart">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="checkOutButton" layoutX="363.0" layoutY="338.0" mnemonicParsing="false" onAction="#checkOutButtonOnAction" prefHeight="35.0" prefWidth="118.0" text="CheckOut" />
-      <VBox fx:id="cartVbox" layoutX="181.0" layoutY="82.0" prefHeight="256.0" prefWidth="438.0" spacing="10.0">
+      <Button fx:id="checkOutButton" layoutX="355.0" layoutY="354.0" mnemonicParsing="false" onAction="#checkOutButtonOnAction" prefHeight="35.0" prefWidth="118.0" text="CheckOut" />
+      <VBox fx:id="cartVbox" layoutX="183.0" layoutY="78.0" prefHeight="256.0" prefWidth="463.0" spacing="10.0">
          <children>
-            <TableView fx:id="cartTableView" prefHeight="200.0" prefWidth="499.0">
+            <TableView fx:id="cartTableView" prefHeight="200.0" prefWidth="596.0">
               <columns>
-                <TableColumn fx:id="itemNameTableColumn" prefWidth="133.0" text="Item Name" />
-                  <TableColumn fx:id="quantityTableColumn" minWidth="5.0" prefWidth="142.0" text="Quantity" />
-                  <TableColumn fx:id="priceTableColumn" minWidth="5.0" prefWidth="162.0" text="Price" />
+                  <TableColumn fx:id="itemNameTableColumn" prefWidth="223.0" text="Items" />
+                  <TableColumn fx:id="quantityTableColumn" prefWidth="122.0" text="Quantity" />
+                  <TableColumn fx:id="priceTableColumn" prefWidth="117.0" text="Price" />
               </columns>
             </TableView>
             <Label fx:id="totalPriceLable" prefHeight="29.0" prefWidth="639.0" text="Total : 0.00 Tk" />
