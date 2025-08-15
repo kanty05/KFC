@@ -4,6 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
+
 public class TrackOrderController
 {
     @javafx.fxml.FXML
@@ -11,8 +14,11 @@ public class TrackOrderController
     @javafx.fxml.FXML
     private Label trackOrderStatusLable;
 
+    Customer customer;
+
     @javafx.fxml.FXML
     public void initialize() {
+
     }
 
     @javafx.fxml.FXML

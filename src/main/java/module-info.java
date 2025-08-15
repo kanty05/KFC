@@ -3,6 +3,7 @@ module mainpckg.kfc1 {
     requires javafx.fxml;
     requires javafx.base;
     requires javafx.graphics;
+    requires java.xml;
 
 
     opens mainpckg.kfc1 to javafx.fxml;

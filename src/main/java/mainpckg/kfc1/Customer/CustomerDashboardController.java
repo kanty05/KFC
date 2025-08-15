@@ -24,6 +24,7 @@ public class CustomerDashboardController
         InfoTextArea.setText(customer.toString());
     }
 
+
     @javafx.fxml.FXML
     public void initialize() {
     }

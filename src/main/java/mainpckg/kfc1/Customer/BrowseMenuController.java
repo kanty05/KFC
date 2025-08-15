@@ -1,6 +1,7 @@
 package mainpckg.kfc1.Customer;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
@@ -15,75 +16,89 @@ import java.util.ArrayList;
 
 public class BrowseMenuController
 {
-    @javafx.fxml.FXML
-    private Spinner<Integer> superChargerBurgerSpinner;
-    @javafx.fxml.FXML
+
+    @FXML
     private TabPane manuTabPane;
-    @javafx.fxml.FXML
-    private Spinner<Integer> zingerBurgerSpinner;
-    @javafx.fxml.FXML
-    private Spinner<Integer> TwelvePcChickenBucketSpinner;
-    @javafx.fxml.FXML
-    private Spinner<Integer> eightPcChickenBucketSpinner;
-    @javafx.fxml.FXML
+    @FXML
     private Tab friesTabPane;
-    @javafx.fxml.FXML
-    private Spinner<Integer> FriesLargeSpinner;
-    @javafx.fxml.FXML
+    @FXML
     private Tab chickenTabPane;
-    @javafx.fxml.FXML
-    private Spinner<Integer> doubleZingerBurgerSpinner;
-    @javafx.fxml.FXML
+    @FXML
     private Tab burgerTabPane;
-    @javafx.fxml.FXML
-    private Spinner<Integer> friesSmallSpinner;
-    @javafx.fxml.FXML
-    private Spinner<Integer> sicPcWingsBucketSpinner;
-    @javafx.fxml.FXML
-    private Spinner<Integer> friesMediumSpinner;
-    @javafx.fxml.FXML
+    @FXML
     private AnchorPane customerAnchorPane;
+    @FXML
+    private TextField friesSmallQuantityTextField;
+    @FXML
+    private TextField superChargerBurgerQuantityTextField;
+    @FXML
+    private TextField doubleZingerBurgerQuantityTextField;
+    @FXML
+    private TextField eightPcChickenQuantityTextField;
+    @FXML
+    private TextField friesLargeQuantityTextField;
+    @FXML
+    private TextField friesMediumQuantityTextField;
+    @FXML
+    private TextField twelvePcChickenQuantityTextField;
+    @FXML
+    private TextField sixPcChickenQuantityTextField;
+    @FXML
+    private TextField zingerBurgerQuantityTextField;
 
-    ArrayList<Customer> customerList;
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
+
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void twelvePcChickenBucketAddToCartButtonOnAction(ActionEvent actionEvent) {
-
+        addToCart("12Pc Chicken Bucket",1799,twelvePcChickenQuantityTextField);
     }
 
-    @javafx.fxml.FXML
+
+    @FXML
     public void eightPcChickenBucketAddToCartButtonOnAction(ActionEvent actionEvent) {
+        addToCart("8Pc Chicken Bucket",1279,eightPcChickenQuantityTextField);
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void friesLargeAddToCartButtonOnAction(ActionEvent actionEvent) {
+        addToCart("Fries-Large",299,friesLargeQuantityTextField);
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void friesMediumAddToCartButtonOnAction(ActionEvent actionEvent) {
+        addToCart("Fries-Medium",199,friesMediumQuantityTextField);
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void friesSmallAddToCartButtonOnAction(ActionEvent actionEvent) {
+        addToCart("Fries-Small",149,friesSmallQuantityTextField);
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void zingerBurgerAddToCartButtonOnAction(ActionEvent actionEvent) {
+        addToCart("Zinger Burger",299,zingerBurgerQuantityTextField);
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void superChargerBurgerAddtoCartButtonOnAction(ActionEvent actionEvent) {
+        addToCart("Super Charger Burger",479,superChargerBurgerQuantityTextField);
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void doubleZingerBurgerAddToCartButtonOnAction(ActionEvent actionEvent) {
+        addToCart("Double Charger Burger",599,doubleZingerBurgerQuantityTextField);
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void sixPcWingsBucketAddToCartButtonOnAction(ActionEvent actionEvent) {
+        addToCart("6Pc Wings Bucket",329,sixPcChickenQuantityTextField);
+    }
+
+    private void addToCart(String itemName,double price,TextField quantity){
+        String qtyText= quantity.getText();
     }
 }

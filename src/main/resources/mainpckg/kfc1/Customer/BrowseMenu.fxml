@@ -2,9 +2,9 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -46,7 +46,6 @@
                                  </font>
                               </Label>
                               <Label layoutX="123.0" layoutY="227.0" text="Qty:" />
-                              <Spinner fx:id="zingerBurgerSpinner" layoutX="145.0" layoutY="223.0" prefHeight="25.0" prefWidth="49.0" />
                               <Button layoutX="15.0" layoutY="254.0" mnemonicParsing="false" onAction="#zingerBurgerAddToCartButtonOnAction" prefHeight="25.0" prefWidth="178.0" text="Add to Cart" />
                               <Label layoutX="275.0" layoutY="202.0" text="Super Charger Burger">
                                  <font>
@@ -58,7 +57,6 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Spinner fx:id="superChargerBurgerSpinner" layoutX="409.0" layoutY="223.0" prefHeight="25.0" prefWidth="49.0" />
                               <Label layoutX="387.0" layoutY="227.0" text="Qty:" />
                               <Button layoutX="280.0" layoutY="254.0" mnemonicParsing="false" onAction="#superChargerBurgerAddtoCartButtonOnAction" prefHeight="25.0" prefWidth="178.0" text="Add to Cart" />
                               <Button layoutX="537.0" layoutY="254.0" mnemonicParsing="false" onAction="#doubleZingerBurgerAddToCartButtonOnAction" prefHeight="25.0" prefWidth="178.0" text="Add to Cart" />
@@ -72,8 +70,10 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Spinner fx:id="doubleZingerBurgerSpinner" layoutX="666.0" layoutY="223.0" prefHeight="25.0" prefWidth="49.0" />
                               <Label layoutX="644.0" layoutY="227.0" text="Qty:" />
+                              <TextField fx:id="zingerBurgerQuantityTextField" layoutX="151.0" layoutY="223.0" prefHeight="25.0" prefWidth="26.0" />
+                              <TextField fx:id="superChargerBurgerQuantityTextField" layoutX="415.0" layoutY="223.0" prefHeight="25.0" prefWidth="26.0" />
+                              <TextField fx:id="doubleZingerBurgerQuantityTextField" layoutX="673.0" layoutY="223.0" prefHeight="25.0" prefWidth="26.0" />
                            </children>
                         </AnchorPane>
                      </children>
@@ -132,14 +132,14 @@
                                  </font>
                               </Label>
                               <Label layoutX="115.0" layoutY="235.0" text="Qty:" />
-                              <Spinner fx:id="eightPcChickenBucketSpinner" layoutX="137.0" layoutY="231.0" prefHeight="20.0" prefWidth="49.0" />
                               <Button layoutX="12.0" layoutY="263.0" mnemonicParsing="false" onAction="#eightPcChickenBucketAddToCartButtonOnAction" prefHeight="25.0" prefWidth="177.0" text="Add to Cart" />
                               <Label layoutX="365.0" layoutY="235.0" text="Qty:" />
-                              <Spinner fx:id="TwelvePcChickenBucketSpinner" layoutX="387.0" layoutY="231.0" prefHeight="20.0" prefWidth="49.0" />
                               <Button layoutX="259.0" layoutY="263.0" mnemonicParsing="false" onAction="#twelvePcChickenBucketAddToCartButtonOnAction" prefHeight="25.0" prefWidth="177.0" text="Add to Cart" />
                               <Button layoutX="540.0" layoutY="263.0" mnemonicParsing="false" onAction="#sixPcWingsBucketAddToCartButtonOnAction" prefHeight="25.0" prefWidth="177.0" text="Add to Cart" />
                               <Label layoutX="644.0" layoutY="235.0" text="Qty:" />
-                              <Spinner fx:id="sicPcWingsBucketSpinner" layoutX="666.0" layoutY="231.0" prefHeight="20.0" prefWidth="49.0" />
+                              <TextField fx:id="eightPcChickenQuantityTextField" layoutX="144.0" layoutY="231.0" prefHeight="25.0" prefWidth="26.0" />
+                              <TextField fx:id="twelvePcChickenQuantityTextField" layoutX="394.0" layoutY="231.0" prefHeight="25.0" prefWidth="26.0" />
+                              <TextField fx:id="sixPcChickenQuantityTextField" layoutX="672.0" layoutY="231.0" prefHeight="25.0" prefWidth="26.0" />
                            </children>
                         </AnchorPane>
                      </children>
@@ -198,14 +198,14 @@
                                  </font>
                               </Label>
                               <Label layoutX="121.0" layoutY="226.0" text="Qty:" />
-                              <Spinner fx:id="FriesLargeSpinner" layoutX="143.0" layoutY="222.0" prefHeight="16.0" prefWidth="49.0" />
                               <Button layoutX="17.0" layoutY="256.0" mnemonicParsing="false" onAction="#friesLargeAddToCartButtonOnAction" prefHeight="25.0" prefWidth="174.0" text="Add to Cart" />
                               <Button layoutX="278.0" layoutY="256.0" mnemonicParsing="false" onAction="#friesMediumAddToCartButtonOnAction" prefHeight="25.0" prefWidth="174.0" text="Add to Cart" />
                               <Button layoutX="536.0" layoutY="256.0" mnemonicParsing="false" onAction="#friesSmallAddToCartButtonOnAction" prefHeight="25.0" prefWidth="174.0" text="Add to Cart" />
-                              <Spinner fx:id="friesMediumSpinner" layoutX="403.0" layoutY="222.0" prefHeight="16.0" prefWidth="49.0" />
-                              <Spinner fx:id="friesSmallSpinner" layoutX="661.0" layoutY="222.0" prefHeight="16.0" prefWidth="49.0" />
                               <Label layoutX="381.0" layoutY="226.0" text="Qty:" />
                               <Label layoutX="639.0" layoutY="226.0" text="Qty:" />
+                              <TextField fx:id="friesLargeQuantityTextField" layoutX="152.0" layoutY="223.0" prefHeight="25.0" prefWidth="26.0" />
+                              <TextField fx:id="friesMediumQuantityTextField" layoutX="410.0" layoutY="223.0" prefHeight="25.0" prefWidth="26.0" />
+                              <TextField fx:id="friesSmallQuantityTextField" layoutX="669.0" layoutY="223.0" prefHeight="25.0" prefWidth="26.0" />
                            </children>
                         </AnchorPane>
                      </children>

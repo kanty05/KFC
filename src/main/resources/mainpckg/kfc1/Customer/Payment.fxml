@@ -27,6 +27,5 @@
       </Label>
       <ComboBox fx:id="paymentMethodCombobox" layoutX="394.0" layoutY="124.0" prefWidth="150.0" />
       <TextField fx:id="cardOrMobileNoTextField" layoutX="395.0" layoutY="211.0" />
-      <Label fx:id="showPaymentSuccessorFailure" layoutX="273.0" layoutY="361.0" prefHeight="17.0" prefWidth="300.0" />
    </children>
 </AnchorPane>

@@ -21,8 +21,8 @@
             <TableView fx:id="cartTableView" prefHeight="200.0" prefWidth="596.0">
               <columns>
                   <TableColumn fx:id="itemNameTableColumn" prefWidth="223.0" text="Items" />
-                  <TableColumn fx:id="quantityTableColumn" prefWidth="122.0" text="Quantity" />
-                  <TableColumn fx:id="priceTableColumn" prefWidth="117.0" text="Price" />
+                  <TableColumn fx:id="quantityTableColumn" prefWidth="94.0" text="Quantity" />
+                  <TableColumn fx:id="priceTableColumn" prefWidth="145.0" text="Price" />
               </columns>
             </TableView>
             <Label fx:id="totalPriceLable" prefHeight="29.0" prefWidth="639.0" text="Total : 0.00 Tk" />
