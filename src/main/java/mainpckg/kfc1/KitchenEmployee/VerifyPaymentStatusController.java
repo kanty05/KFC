@@ -1,26 +1,44 @@
 package mainpckg.kfc1.KitchenEmployee;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+import mainpckg.kfc1.Customer.Customer;
+import mainpckg.kfc1.Customer.Payment;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class VerifyPaymentStatusController
 {
-    @javafx.fxml.FXML
-    private TableColumn<KitchenEmployee,String> paymentStatusTableColumn;
-    @javafx.fxml.FXML
+    @FXML
+    private TableColumn<Payment,String> paymentStatusTableColumn;
+    @FXML
     private Label showPaymentResultLable;
-    @javafx.fxml.FXML
-    private TableColumn<KitchenEmployee,String> orderIDTableColumn;
-    @javafx.fxml.FXML
-    private TableView<KitchenEmployee> paymentVerifyTableView;
+    @FXML
+    private TableColumn<Payment,String> orderIDTableColumn;
+    @FXML
+    private TableView<Payment> paymentVerifyTableView;
 
-    @javafx.fxml.FXML
+    ArrayList<Payment> paymentList = new ArrayList<Payment>();
+
+    @FXML
     public void initialize() {
+
+        orderIDTableColumn.setCellValueFactory(new PropertyValueFactory<>("orderID"));
+        paymentStatusTableColumn.setCellValueFactory(new PropertyValueFactory<>("paymentStatus"));
+
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void checkPaymentStatusButtonOnStock(ActionEvent actionEvent) {
+        paymentVerifyTableView.getItems().clear();
+        KitchenEmployee emp1=null;
+        paymentVerifyTableView.getItems().add(new Payment(emp1,"0001","Paid"));
+        paymentVerifyTableView.getItems().add(new Payment(emp1,"0002","Pending"));
+
     }
 }

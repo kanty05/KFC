@@ -7,6 +7,8 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import mainpckg.kfc1.Customer.Order;
 
+import java.util.ArrayList;
+
 public class NewOrdersController {
 
     @javafx.fxml.FXML
@@ -22,18 +24,19 @@ public class NewOrdersController {
 
 
     private ObservableList<Order> orders = FXCollections.observableArrayList();
+
     @javafx.fxml.FXML
     public void initialize() {
 
-        orderIDTableColumn.setCellValueFactory(new PropertyValueFactory<KitchenEmployee,String>("id"));
-        itemsTableColumn.setCellValueFactory(new PropertyValueFactory<KitchenEmployee,String>("items"));
-        quantityTableColumn.setCellValueFactory(new PropertyValueFactory<KitchenEmployee,Integer>("quantity"));
-        totalPriceTableColumn.setCellValueFactory(new PropertyValueFactory<KitchenEmployee,Double>("total price"));
+        orderIDTableColumn.setCellValueFactory(new PropertyValueFactory<>("orderID"));
+        itemsTableColumn.setCellValueFactory(new PropertyValueFactory<>("items"));
+        quantityTableColumn.setCellValueFactory(new PropertyValueFactory<>("quantity"));
+        totalPriceTableColumn.setCellValueFactory(new PropertyValueFactory<>("totalPrice"));
 
         orders.add(new Order("0001","Zinger Burger",1,299));
-        orders.add(new Order("0002","Fries-medium",2,199));
-        orders.add(new Order("0003"," Double Zinger Burger",2,599));
-        orders.add(new Order("0004","12 pcs Hot & Crispy Chicken Bucket,",1,1799));
+        orders.add(new Order("0002","Fries-medium",1,199));
+        orders.add(new Order("0003","12 pcs hot and crispy Chicken Bucket",1,1799));
+        orders.add(new Order("0004","Double Zinger Burger",1,599));
 
         newOrdersTableView.setItems(orders);
     }

@@ -21,7 +21,7 @@
             <TableColumn fx:id="currentStatusTableColumn" prefWidth="152.0" text="Current Status" />
         </columns>
       </TableView>
-      <ComboBox layoutX="317.0" layoutY="353.0" onAction="#newStatusComboBox" prefWidth="150.0" />
+      <ComboBox fx:id="newStatusComboBox" layoutX="317.0" layoutY="353.0" prefWidth="150.0" />
       <Label layoutX="244.0" layoutY="357.0" text="New Status:" />
       <Button layoutX="491.0" layoutY="353.0" mnemonicParsing="false" onAction="#updateStatusButtonOnAction" text="Update Status" />
    </children>

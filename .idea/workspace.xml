@@ -6,18 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="70ace826-c8bd-4c05-bf9f-3e5dd9e10fbe" name="Changes" comment="second commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/Customer/BrowseMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/Customer/BrowseMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/Customer/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/Customer/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/Customer/CustomerDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/Customer/CustomerDashboardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/Customer/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/Customer/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/Customer/TrackOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/Customer/TrackOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/KitchenEmployee/KitchenShiftLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/KitchenEmployee/KitchenShiftLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/KitchenEmployee/DailyReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/KitchenEmployee/DailyReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/KitchenEmployee/FoodStockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/KitchenEmployee/FoodStockController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/KitchenEmployee/NewOrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/KitchenEmployee/NewOrdersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainpckg/kfc1/Customer/BrowseMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainpckg/kfc1/Customer/BrowseMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainpckg/kfc1/Customer/Cart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainpckg/kfc1/Customer/Cart.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainpckg/kfc1/Customer/Payment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainpckg/kfc1/Customer/Payment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainpckg/kfc1/KitchenEmployee/KitchenShiftLog.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainpckg/kfc1/KitchenEmployee/KitchenShiftLog.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/KitchenEmployee/UpdateOrderStatusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/KitchenEmployee/UpdateOrderStatusController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/KitchenEmployee/VerifyPaymentStatusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainpckg/kfc1/KitchenEmployee/VerifyPaymentStatusController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mainpckg/kfc1/KitchenEmployee/FoodStock.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainpckg/kfc1/KitchenEmployee/FoodStock.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mainpckg/kfc1/KitchenEmployee/UpdateOrderStatus.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainpckg/kfc1/KitchenEmployee/UpdateOrderStatus.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +208,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755178365881</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="second commit">
+      <option name="closed" value="true" />
+      <created>1755283656849</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1755283656849</updated>
+    </task>
+    <task id="LOCAL-00018" summary="second commit">
+      <option name="closed" value="true" />
+      <created>1755283866240</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1755283866240</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
