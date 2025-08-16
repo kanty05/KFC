@@ -27,36 +27,37 @@ public class PaymentController
 
     @FXML
     public void payNowButtonOnAction(ActionEvent actionEvent) {
-//        String paymentMethod;
-//        int cardNoOrMobileNo;
-//        boolean flag = true;
-//
-//
-//        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-//
-//
-//        paymentMethod = paymentMethodCombobox.getValue();
-//        cardNoOrMobileNo = Integer.parseInt(cardOrMobileNoTextField.getText());
-//
-//        if (paymentMethod.isBlank()){
-//            flag = false;
-//            alert.setTitle("choose atleast 1 method");
-//            alert.setContentText("Payment method can not be blank");
-//            alert.showAndWait();
-//        }
-//        else {
-//            alert.setTitle("Congratulations!");
-//            alert.setContentText("Payment Successfull");
-//            alert.showAndWait();
-//
-//        }
+        String paymentMethod;
+        int cardNoOrMobileNo;
+        boolean flag = true;
 
-//        Payment payment = new Payment(paymentMethod,cardNoOrMobileNo);
-//        paymentList.add(payment);
-//
-//
-//        cardOrMobileNoTextField.clear();
-//        paymentMethodCombobox.setValue(null);
+
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+
+
+        paymentMethod = paymentMethodCombobox.getValue();
+        cardNoOrMobileNo = Integer.parseInt(cardOrMobileNoTextField.getText());
+
+        if (paymentMethod.isBlank()){
+            flag = false;
+            alert.setTitle("choose atleast 1 method");
+            alert.setContentText("Payment method can not be blank");
+            alert.showAndWait();
+        }
+        else {
+            alert.setTitle("Congratulations!");
+            alert.setContentText("Payment Successfull");
+            alert.showAndWait();
+
+        }
+
+        Customer c1 = null;
+        Payment payment = new Payment(c1,paymentMethod,(String.valueOf(cardNoOrMobileNo)));
+        paymentList.add(payment);
+
+
+        cardOrMobileNoTextField.clear();
+        paymentMethodCombobox.setValue(null);
 
 
     }

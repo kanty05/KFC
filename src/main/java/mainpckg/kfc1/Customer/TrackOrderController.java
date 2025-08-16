@@ -1,6 +1,7 @@
 package mainpckg.kfc1.Customer;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
@@ -23,5 +24,16 @@ public class TrackOrderController
 
     @javafx.fxml.FXML
     public void trackButtonOnAction(ActionEvent actionEvent) {
+        String orderID = orderIDTextField.getText();
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+
+        if (orderID.isEmpty()){
+            alert.setContentText("Enter OrderID");
+            alert.showAndWait();
+
+        }
+        else{
+            trackOrderStatusLable.setText("Order" +  "is being processed!");
+        }
     }
 }

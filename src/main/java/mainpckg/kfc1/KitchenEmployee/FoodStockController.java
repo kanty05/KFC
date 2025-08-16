@@ -25,12 +25,12 @@ public class FoodStockController {
         stockAvailabilityTableColumn.setCellValueFactory(new PropertyValueFactory<>("availability"));
 
         KitchenEmployee e1 = null;
-        foodItems.add(new FoodItem(e1,"Zinger Burger", "Available"));
-        foodItems.add(new FoodItem(e1,"Double Zinger Burger", "Out of Stock"));
-        foodItems.add(new FoodItem(e1,"Super Charger Burger", "Available"));
-        foodItems.add(new FoodItem(e1,"Fries-medium", "Available"));
-        foodItems.add(new FoodItem(e1,"Fries-Large", "Out of Stock"));
-        foodItems.add(new FoodItem(e1,"8pcs Hot & Crispy Chicken", "Available"));
+        foodItems.add(new FoodItem(e1,"Zinger Burger", "Available",3));
+        foodItems.add(new FoodItem(e1,"Double Zinger Burger", "Out of Stock",0));
+        foodItems.add(new FoodItem(e1,"Super Charger Burger", "Available",8));
+        foodItems.add(new FoodItem(e1,"Fries-medium", "Available",9));
+        foodItems.add(new FoodItem(e1,"Fries-Large", "Out of Stock",0));
+        foodItems.add(new FoodItem(e1,"8pcs Hot & Crispy Chicken", "Available",2));
         foodStckTableView.setItems(foodItems);
 
 

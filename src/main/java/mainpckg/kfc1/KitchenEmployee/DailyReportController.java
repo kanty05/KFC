@@ -36,7 +36,7 @@ public class DailyReportController
 
     @javafx.fxml.FXML
     public void generateReportButtonOnAction(ActionEvent actionEvent) {
-        dailyReportTableView.getItems() ;
+        dailyReportTableView.getItems().clear();
         reports.add(new Report("0001","Zinger Burger,Fries-medium", 498));
         reports.add(new Report("0002","Zinger Burger", 299));
         reports.add(new Report("0003","Double Zinger Burger,12pcs Chicken Bucket", 2398));

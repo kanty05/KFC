@@ -28,5 +28,6 @@
             <Label fx:id="totalPriceLable" prefHeight="29.0" prefWidth="639.0" text="Total : 0.00 Tk" />
          </children>
       </VBox>
+      <Label fx:id="labelmsg" layoutX="293.0" layoutY="406.0" prefHeight="17.0" prefWidth="269.0" />
    </children>
 </AnchorPane>

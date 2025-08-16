@@ -76,4 +76,10 @@ public class CustomerDashboardController
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Customer/Cart.fxml"));
         CustomerBorderPane.setCenter(fxmlLoader.load());
     }
+
+    @javafx.fxml.FXML
+    public void placeOrderButtonOcAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Customer/PlaceOrder.fxml"));
+        CustomerBorderPane.setCenter(fxmlLoader.load());
+    }
 }

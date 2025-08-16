@@ -7,6 +7,8 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import mainpckg.kfc1.Customer.Order;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class NewOrdersController {
@@ -33,10 +35,9 @@ public class NewOrdersController {
         quantityTableColumn.setCellValueFactory(new PropertyValueFactory<>("quantity"));
         totalPriceTableColumn.setCellValueFactory(new PropertyValueFactory<>("totalPrice"));
 
-        orders.add(new Order("0001","Zinger Burger",1,299));
-        orders.add(new Order("0002","Fries-medium",1,199));
-        orders.add(new Order("0003","12 pcs hot and crispy Chicken Bucket",1,1799));
-        orders.add(new Order("0004","Double Zinger Burger",1,599));
+        orders.add(new Order("0001","Zinger Burger",1,299,"done", LocalDate.of(2025,8,16)));
+        orders.add(new Order("0002","Fries-medium",1,199,"done",LocalDate.of(2025,8,15)));
+        orders.add(new Order("0003","12 pcs hot and crispy Chicken Bucket",1,1799,"done",LocalDate.of(2025,8,10)));
 
         newOrdersTableView.setItems(orders);
     }
